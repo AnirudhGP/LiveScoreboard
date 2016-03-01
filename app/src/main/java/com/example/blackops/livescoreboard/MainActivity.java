@@ -229,7 +229,7 @@ public class MainActivity extends AppCompatActivity {
         getMenuInflater().inflate(R.menu.menu_main, menu);
         return true;
     }
-    void sendToServer(String isCompleted,String isCrazy,String gend,String rnd,String qrter,String s1,String s2,String t1,String t2)
+    void sendToServer(String isCompleted,String isCrazy,String gend,String qrter,String rnd, String s1,String s2,String t1,String t2)
     {
         //Call API to send to server
     }
@@ -250,7 +250,7 @@ public class MainActivity extends AppCompatActivity {
             String s2 = score2.getText().toString();
             String t1 = team1.getText().toString();
             String t2 = team2.getText().toString();
-            sendToServer(isCompleted,isCrazy,gend,r,q,s1,s2,t1,t2);
+            sendToServer(isCompleted,isCrazy,gend,q,r,s1,s2,t1,t2);
             gender.setEnabled(true);
             round.setEnabled(true);
             start.setEnabled(true);
